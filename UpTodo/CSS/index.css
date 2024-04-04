@@ -1,0 +1,20 @@
+body {
+    width: 375px;
+    height: 812px;
+    top: -3118px;
+    left: -4070px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.statusBar .iphoneX {
+    background-image: url("../Components/iPhone\ X\ \(or\ newer\).png");
+    width: 375px;
+    height: 44px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.statusBar .clock {
+
+}
