@@ -5,16 +5,21 @@ body {
     left: -4070px;
     gap: 0px;
     opacity: 0px;
+    display: flex;
+    background: #121212;
+    flex-direction: column;
 }
 
 .statusBar {
-    width: 54px;
-    height: 21px;
+    width: 375px;
+    height: 44px;
     top: 12px;
     left: 21px;
     gap: 0px;
     border-radius: 24px 0px 0px 0px;
     opacity: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .statusBar .leftSide {
@@ -25,6 +30,8 @@ body {
     gap: 0px;
     border-radius: 24px 0px 0px 0px;
     opacity: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .statusBar .clock {
@@ -50,7 +57,8 @@ body {
     line-height: 20px;
     letter-spacing: -0.5px;
     text-align: center;
-    background: #FFFFFF;
+    color: #FFFFFF;
+    margin: 0;
 }
 
 .statusBar .rigthSide {
@@ -60,7 +68,9 @@ body {
     left: 293.67px;
     gap: 0px;
     opacity: 0px;
-    border: 1px solid #FFFFFF
+    display: flex;
+    align-items: center;
+
 }
 
 .statusBar .rigthSide .signal {
@@ -71,6 +81,7 @@ body {
     left: 293.67px;
     gap: 0px;
     opacity: 0px;
+    margin-right: 4px;
 }
 
 .statusBar .rigthSide .wifi {
@@ -81,6 +92,7 @@ body {
     left: 315.69px;
     gap: 0px;
     opacity: 0px;
+    margin-right: 4px;
 }
 
 .statusBar .rigthSide .battery {
@@ -91,7 +103,6 @@ body {
     left: 336px;
     gap: 0px;
     opacity: 0px;
-    border: 1px solid #FFFFFF
 }
 
 .statusBar .notch {
@@ -104,11 +115,68 @@ body {
 }
 
 .statusBar .notch .iphoneX {
-    background-image: url("../Components/iPhone\ X\ \(or\ newer\).png");
+    background-image: url("../Components/Notch.png");
     width: 219px;
-    height: 30px;
+    height: 28px;
     top: -2px;
     left: 78px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.index {
+    width: 327px;
+    height: 42px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.index .sort {
+    width: 42px;
+    height: 42px;
+    top: 57px;
+    left: 24px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index .sortIcon {
+    width: 24px;
+    height: 24px;
+    top: 66px;
+    left: 33px;
+    gap: 0px;
+    opacity: 0px;
+    background-image: url("../Components/sort.png");
+}
+
+.index .indexT {
+    width: 47px;
+    height: 20px;
+    top: 68px;
+    left: 165px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #FFFFFFDE;
+}
+
+.index .profile {
+    background-image: url("../Components/Group\ 159.png");
+    width: 42px;
+    height: 42px;
+    top: 57px;
+    left: 309px;
     gap: 0px;
     opacity: 0px;
 }
