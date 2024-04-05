@@ -1,0 +1,114 @@
+body {
+    width: 375px;
+    height: 812px;
+    top: -3118px;
+    left: -4070px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.statusBar {
+    width: 54px;
+    height: 21px;
+    top: 12px;
+    left: 21px;
+    gap: 0px;
+    border-radius: 24px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.statusBar .leftSide {
+    width: 54px;
+    height: 21px;
+    top: 12px;
+    left: 21px;
+    gap: 0px;
+    border-radius: 24px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.statusBar .clock {
+    width: 54px;
+    height: 21px;
+    top: 12px;
+    left: 21px;
+    padding: 1px 0px 0px 0px;
+    gap: 0px;
+    border-radius: 24px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.statusBar .clock p {
+    width: 54px;
+    height: 20px;
+    top: 1px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: SF Pro Display;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+.statusBar .rigthSide {
+    width: 66.66px;
+    height: 11.34px;
+    top: 17.33px;
+    left: 293.67px;
+    gap: 0px;
+    opacity: 0px;
+    border: 1px solid #FFFFFF
+}
+
+.statusBar .rigthSide .signal {
+    background-image: url("../Components/Mobile\ Signal.png");
+    width: 17px;
+    height: 10.67px;
+    top: 17.67px;
+    left: 293.67px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.statusBar .rigthSide .wifi {
+    background-image: url("../Components/Wifi.png");
+    width: 15.27px;
+    height: 10.97px;
+    top: 17.33px;
+    left: 315.69px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.statusBar .rigthSide .battery {
+    background-image: url("../Components/Battery.png");
+    width: 24.33px;
+    height: 11.33px;
+    top: 17.33px;
+    left: 336px;
+    gap: 0px;
+    opacity: 0px;
+    border: 1px solid #FFFFFF
+}
+
+.statusBar .notch {
+    width: 219px;
+    height: 30px;
+    top: -2px;
+    left: 78px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.statusBar .notch .iphoneX {
+    background-image: url("../Components/iPhone\ X\ \(or\ newer\).png");
+    width: 219px;
+    height: 30px;
+    top: -2px;
+    left: 78px;
+    gap: 0px;
+    opacity: 0px;
+}
