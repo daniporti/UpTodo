@@ -6,9 +6,90 @@ body {
     gap: 0px;
     opacity: 0px;
     display: flex;
+    flex-direction: column;
+    font-family: lato;
+}
+
+.bgBody {
+    width: 375px;
+    height: 812px;
+    top: -3118px;
+    left: -4070px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
     background: #121212;
     flex-direction: column;
 }
+
+p {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 
 .statusBar {
     width: 375px;
@@ -20,6 +101,7 @@ body {
     opacity: 0px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .statusBar .leftSide {
@@ -43,6 +125,7 @@ body {
     gap: 0px;
     border-radius: 24px 0px 0px 0px;
     opacity: 0px;
+    font-family: lato;
 }
 
 .statusBar .clock p {
@@ -124,6 +207,11 @@ body {
     opacity: 0px;
 }
 
+.indexWrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .index {
     width: 327px;
     height: 42px;
@@ -179,4 +267,143 @@ body {
     left: 309px;
     gap: 0px;
     opacity: 0px;
+}
+
+.emptyImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    margin-right: 35px;
+}
+
+.emptyImg .img {
+    background-image: url("../Components/Checklist-rafiki\ 1.png");
+    width: 227px;
+    height: 227px;
+    top: 174px;
+    left: 74px;
+}
+
+.texts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texts h2 {
+    width: 270px;
+    height: 30px;
+    top: 411px;
+    left: 53px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30.1px;
+    text-align: left;
+    color: #FFFFFFDE;
+    margin: 0;
+}
+
+.texts p {
+    width: 159px;
+    height: 24px;
+    top: 451px;
+    left: 108px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.08px;
+    text-align: left;
+    color: #FFFFFFDE;
+    margin: 0;
+}
+
+.menuNav {
+    width: 375px;
+    height: 124px;
+    top: 688px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+    bottom: 0;
+}
+
+.menuNav .rectangle {
+    width: 375px;
+    height: 110px;
+    top: 24px;
+    gap: 0px;
+    opacity: 0px;
+    background: #363636;
+    position: relative;
+    bottom: 0;
+}
+
+.menuNav .indexWrap {
+    width: 48px;
+    height: 50px;
+    top: 36px;
+    left: 20px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuNav .left {
+    display: flex;
+    justify-content: center;
+}
+
+.menuNav .indexWrap .indexBtn {
+    width: 30px;
+    height: 50px;
+    top: 36px;
+    left: 28px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.menuNav .indexBtn p {
+    width: 30px;
+    height: 18px;
+    top: 68px;
+    left: 28px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.06px;
+    text-align: left;
+    color: #FFFFFFDE;
+}
+
+.menuNav .calendarBtn {
+    width: 24px;
+    height: 24px;
+    top: 36px;
+    left: 100px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.calendarBtn p {
+    width: 48px;
+    height: 18px;
+    top: 68px;
+    left: 88px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.06px;
+    text-align: left;
+    color: #FFFFFFFA;
 }
