@@ -8,6 +8,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: lato;
+    align-items: center;
+    justify-content: center;
 }
 
 .bgBody {
@@ -352,19 +354,30 @@ h2 {
     gap: 0px;
     opacity: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
 }
+
 .menuNav .left {
     display: flex;
     justify-content: center;
 }
 
 .menuNav .indexWrap .indexBtn {
-    width: 30px;
+    width: 48px;
     height: 50px;
     top: 36px;
-    left: 28px;
+    left: 20px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.menuNav .indexBtn img {
+    width: 24px;
+    height: 24px;
+    top: 36px;
+    left: 31px;
     gap: 0px;
     opacity: 0px;
 }
@@ -384,7 +397,7 @@ h2 {
     color: #FFFFFFDE;
 }
 
-.menuNav .calendarBtn {
+.menuNav .calendarBtn img{
     width: 24px;
     height: 24px;
     top: 36px;
@@ -398,6 +411,100 @@ h2 {
     height: 18px;
     top: 68px;
     left: 88px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.06px;
+    text-align: left;
+    color: #FFFFFFFA;
+}
+
+.menuNav .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -8px;
+    left: 156px;
+}
+
+
+.center .newTask {
+    box-shadow: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    
+    gap: 0px;
+    opacity: 0px;
+}
+
+.menuNav .rigth {
+    display: flex;
+    justify-content: end;
+}
+
+.rigth .focuseBtn {
+    width: 48px;
+    height: 50px;
+    top: 36px;
+    left: 240px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.focuseBtn img {
+    width: 24px;
+    height: 24px;
+    top: 36px;
+    left: 253px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.focuseBtn p {
+    width: 37px;
+    height: 18px;
+    top: 68px;
+    left: 246px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.06px;
+    text-align: left;
+    color: #FFFFFFFA;
+}
+
+.rigth .profileBtn {
+    width: 48px;
+    height: 50px;
+    top: 36px;
+    left: 308px;
+    gap: 0px;
+    opacity: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileBtn img {
+    width: 24px;
+    height: 24px;
+    top: 36px;
+    left: 320px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.profileBtn p {
+    width: 36px;
+    height: 18px;
+    top: 68px;
+    left: 314px;
     gap: 0px;
     opacity: 0px;
     font-family: Lato;
