@@ -12,7 +12,7 @@ body {
     justify-content: center;
 }
 
-.bgBody {
+.emptyScreen , .newTask{
     width: 375px;
     height: 812px;
     top: -3118px;
@@ -430,16 +430,16 @@ h2 {
 }
 
 
-.center .newTask {
+.center .newTaskBtn {
     box-shadow: none;
     cursor: pointer;
     border: 0;
     border-radius: 50%;
     width: 64px;
     height: 64px;
-    
     gap: 0px;
     opacity: 0px;
+    background: #8687E7;
 }
 
 .menuNav .rigth {
@@ -513,4 +513,74 @@ h2 {
     line-height: 18.06px;
     text-align: left;
     color: #FFFFFFFA;
+}
+
+.menuNav .bottom .newTaskBtn{
+    width: 134px;
+    height: 5px;
+    top: 799px;
+    left: 121px;
+    gap: 0px;
+    border-radius: 36px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.newTask .content .bg {
+    width: 375px;
+    height: 228px;
+    top: 262px;
+    background-image: url("../Components/Rectangle\ 96.png");
+    display: block;
+}
+
+.content .bg h2 {
+    width: 81px;
+    height: 30px;
+    top: 287px;
+    left: 25px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30.1px;
+    text-align: left;
+    color: #FFFFFFDE;
+    display: inline;
+}
+
+.content input {
+    width: 325px;
+    height: 43px;
+    top: 331px;
+    left: 24px;
+    padding: 8px 16px;
+    gap: 10px;
+    border-radius: 4px 0px 0px 0px;
+    border: 1px solid transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.content input:focus {
+    border: 1px solid #979797;
+}
+
+.content input:not(:placeholder-shown) {
+    opacity: 1;
+}
+
+
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
 }

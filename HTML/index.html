@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Up Todo</title>
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JS/index.js"></script>
 </head>
 <body>
-    <div class="bgBody">
+    <div class="emptyScreen">
         <header class="statusBar">
             <div class="leftSide">
                 <div class="clock">
@@ -36,41 +38,62 @@
             </div>
         </div>
         
-        <div class="emptyImg">
-            <div class="img"></div>
-        </div>
-        <div class="texts">
-            <h2>What do you want to do today?</h2>
-            <p>Tap + to add your tasks</p>
-        </div>
-        <div class="menuNav">
-            <div class="rectangle">
-                <div class="indexWrap">
-                    <div class="left">
-                        <div class="indexBtn">
-                            <img src="../Components/home-2.png" alt="">
-                            <p>Index</p>
+        <div class="wrapper">
+            <div class="emptyImg">
+                <div class="img"></div>
+            </div>
+            <div class="texts">
+                <h2>What do you want to do today?</h2>
+                <p>Tap + to add your tasks</p>
+            </div>
+            <div class="menuNav">
+                <div class="rectangle">
+                    <div class="indexWrap">
+                        <div class="left">
+                            <div class="indexBtn">
+                                <img src="../Components/home-2.png" alt="">
+                                <p>Index</p>
+                            </div>
+                            <div class="calendarBtn">
+                                <img src="../Components/calendar.png" alt="">
+                                <p>Calendar</p>
+                            </div>
                         </div>
-                        <div class="calendarBtn">
-                            <img src="../Components/calendar.png" alt="">
-                            <p>Calendar</p>
+                        <div class="center">
+                            <button class="newTaskBtn"><img src="../Components/add.png" alt=""></button>
                         </div>
-                    </div>
-                    <div class="center">
-                        <button class="newTask"><img src="../Components/Group 162.png" alt=""></button>
-                    </div>
-                    <div class="rigth">
-                        <div class="focuseBtn">
-                            <img src="../Components/clock.png" alt="">
-                            <p>Focuse</p>
+                        <div class="rigth">
+                            <div class="focuseBtn">
+                                <img src="../Components/clock.png" alt="">
+                                <p>Focuse</p>
+                            </div>
+                            <div class="profileBtn">
+                                <img src="../Components/user.png" alt="">
+                                <p>Profile</p>
+                            </div>
                         </div>
-                        <div class="profileBtn">
-                            <img src="../Components/user.png" alt="">
-                            <p>Profile</p>
+                        <div class="bottom">
+                            <img src="../Components/Rectangle 90.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div class="overlay"></div>
+    <div class="newTask" style="display: none;">
+        <div class="content">
+            <div class="bg">
+                <h2>Add Task</h2>
+                <form>
+                    <input type="text" placeholder="Nome" name="nome"/>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="keyboard">
+            <img src="../Components/Keyboard.png" alt="">
         </div>
     </div>
     
