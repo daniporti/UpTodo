@@ -72,24 +72,53 @@
                                 <p>Profile</p>
                             </div>
                         </div>
-                        <div class="bottom">
-                            <img src="../Components/Rectangle 90.png" alt="">
-                        </div>
+                    </div>
+                    <div class="bottom">
+                        <img src="../Components/Rectangle 90.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="overlay"></div>
     <div class="newTask" style="display: none;">
+        <header class="statusBar">
+            <div class="leftSide">
+                <div class="clock">
+                    <p>9:41</p>
+                </div>
+            </div>
+            <div class="notch">
+                <div class="iphoneX"></div>
+            </div>
+            <div class="rigthSide">
+                <div class="signal"></div>
+                <div class="wifi"></div>
+                <div class="battery"></div>
+            </div>
+        </header>
+        <div class="indexWrapperBlr nt">
+            <div class="index">
+                <div class="sort">
+                    <div class="sortIcon"></div>
+                </div>
+                <p class="indexT">Index</p>
+                <div class="profile"></div>
+            </div>
+        </div>
         <div class="content">
             <div class="bg">
                 <h2>Add Task</h2>
                 <form>
-                    <input type="text" placeholder="Nome" name="nome"/>
-                    
+                    <input type="text" placeholder="Nome" id="nomeInput" name="nome"/>
+                    <input type="text" placeholder="Descrição" name="descrição">
                 </form>
+                <div class="configuration">
+                    <button class="timer"></button>
+                    <button class="tag"></button>
+                    <button class="flag"></button>
+                    <button class="send"></button>
+                </div>                
             </div>
         </div>
         <div class="keyboard">
@@ -97,5 +126,100 @@
         </div>
     </div>
     
+    <div class="priority" style="display: none;">
+        <header class="statusBar">
+            <div class="leftSide">
+                <div class="clock">
+                    <p>9:41</p>
+                </div>
+            </div>
+            <div class="notch">
+                <div class="iphoneX"></div>
+            </div>
+            <div class="rigthSide">
+                <div class="signal"></div>
+                <div class="wifi"></div>
+                <div class="battery"></div>
+            </div>
+        </header>
+        <div class="indexWrapperBlr">
+            <div class="index">
+                <div class="sort">
+                    <div class="sortIcon"></div>
+                </div>
+                <p class="indexT">Index</p>
+                <div class="profile"></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="bg">
+                <div class="title">
+                    <h2>Task priority</h2>
+                </div>
+                <div class="divaider"></div>
+                <div class="priorityNumber" id="priorityNumber">
+                    <button class="prtBtn prtBtn1" onclick="toggleButton(1)"><img src="../Components/flag.png" alt=""><p>1</p></button>
+                    <button class="prtBtn prtBtn2" onclick="toggleButton(2)"><img src="../Components/flag.png" alt=""><p>2</p></button>
+                    <button class="prtBtn prtBtn3" onclick="toggleButton(3)"><img src="../Components/flag.png" alt=""><p>3</p></button>
+                    <button class="prtBtn prtBtn4" onclick="toggleButton(4)"><img src="../Components/flag.png" alt=""><p>4</p></button>
+                    <button class="prtBtn prtBtn5" onclick="toggleButton(5)"><img src="../Components/flag.png" alt=""><p>5</p></button>
+                    <button class="prtBtn prtBtn6" onclick="toggleButton(6)"><img src="../Components/flag.png" alt=""><p>6</p></button>
+                    <button class="prtBtn prtBtn7" onclick="toggleButton(7)"><img src="../Components/flag.png" alt=""><p>7</p></button>
+                    <button class="prtBtn prtBtn8" onclick="toggleButton(8)"><img src="../Components/flag.png" alt=""><p>8</p></button>
+                    <button class="prtBtn prtBtn9" onclick="toggleButton(9)"><img src="../Components/flag.png" alt=""><p>9</p></button>
+                    <button class="prtBtn prtBtn10" onclick="toggleButton(10)"><img src="../Components/flag.png" alt=""><p>10</p></button>
+                </div>                
+                <div class="final">
+                    <button class="cancel">Cancel</button>
+                    <button class="save" onclick="savePriority()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="homeScreen" style="display: none;">
+        <header class="statusBar">
+            <div class="leftSide">
+                <div class="clock">
+                    <p>9:41</p>
+                </div>
+            </div>
+            <div class="notch">
+                <div class="iphoneX"></div>
+            </div>
+            <div class="rigthSide">
+                <div class="signal"></div>
+                <div class="wifi"></div>
+                <div class="battery"></div>
+            </div>
+        </header>
+        <div class="indexWrapperBlr">
+            <div class="index">
+                <div class="sort">
+                    <div class="sortIcon"></div>
+                </div>
+                <p class="indexT">Index</p>
+                <div class="profile"></div>
+            </div>
+        </div>
+
+        <div class="searchBar"><img src="../Components/Search Bar.png" alt=""></div>
+        <div class="tasks">
+            <div class="unfinished">
+                <div class="filter">
+                    <img src="../Components/Frame 159.png" alt="">
+                </div>
+                <div class="unfinTask">
+                </div>
+            </div>
+            <div class="finished">
+                <div class="filter">
+                    <img src="../Components/Frame 160.png" alt="">
+                </div>
+                <div class="finiTask">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

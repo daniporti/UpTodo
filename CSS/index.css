@@ -558,21 +558,198 @@ h2 {
     gap: 10px;
     border-radius: 4px 0px 0px 0px;
     border: 1px solid transparent;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    background-color: transparent;
+    transition: border 0.3s ease, background-color 0.3s ease;
 }
 
 .content input:focus {
     border: 1px solid #979797;
+    background-color: transparent;
 }
 
-.content input:not(:placeholder-shown) {
-    opacity: 1;
+.content input::placeholder {
+    color: #979797;
 }
 
+.content input:focus::placeholder {
+    color: transparent;
+}
 
+.content input:focus::-webkit-input-placeholder { 
+    opacity: 0;
+}
 
+.content input:focus::-moz-placeholder {
+    opacity: 0;
+}
 
+.content input:focus:-ms-input-placeholder { 
+    opacity: 0;
+}
+
+.content input:focus::-ms-input-placeholder { 
+    opacity: 0;
+}
+
+.content input:focus::placeholder { 
+    opacity: 0;
+}
+
+.content input:focus-visible {
+    outline: none;
+}
+
+.content input {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.09px;
+    text-align: left;
+    width: 156px;
+    height: 27px;
+    gap: 0px;
+    opacity: 0px;
+    color: #FFFFFFDE;
+}
+.content .configuration {
+    display: flex;
+    align-items: flex-end;
+}
+
+.content .configuration .timer{
+    background-image: url("../Components/timer.png");
+    width: 24px;
+    height: 24px;
+    top: 449px;
+    left: 24px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.content .configuration .tag{
+    background-image: url("../Components/tag.png");
+    width: 24px;
+    height: 24px;
+    top: 449px;
+    left: 80px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.content .configuration .flag{
+    background-image: url("../Components/flag.png");
+    width: 24px;
+    height: 24px;
+    top: 449px;
+    left: 136px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.content .configuration .timer,
+.content .configuration .tag,
+.content .configuration .flag, 
+.content .configuration .send {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.content .configuration .send {
+    background-image: url("../Components/send.png");
+    width: 24px;
+    height: 24px;
+    top: 449px;
+    left: 327px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.priority {
+    width: 375px;
+    height: 812px;
+    top: -3118px;
+    left: -4070px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: lato;
+    background-color: #121212;
+}
+
+.priority .bg {
+    width: 327px;
+    height: 360px;
+    top: 228px;
+    left: 24px;
+    gap: 0px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+    background: #363636;
+}
+
+.priority .bg .divider {
+    width: 312px;
+    height: 0px;
+    top: 268px;
+    left: 32px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #979797
+}
+
+.priority .priorityNumber .prtBtn {
+    width: 64px;
+    height: 64px;
+    gap: 0px;
+    border-radius: 4px;
+    opacity: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #272727;
+    box-shadow: none;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+.priority .priorityNumber .selected {
+    background: #8687E7;
+}
+
+.priority .priorityNumber .prtBtn img {
+    padding-top: 5px;
+}
+
+.priority .priorityNumber .prtBtn p {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.3199999928474426px;
+    text-align: left;
+    color: #FFFFFFDE;
+    padding-left: 5px;
+}
+
+.priority .priorityNumber .prtBtn10 {
+    padding-left: -5px;
+}
+
+.indexWrapperBrl {
+    background: #000000BD;
+}
+
+.nt {
+    margin-bottom: 180px;
+}
 
 .overlay {
     position: absolute;
@@ -583,4 +760,74 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
     display: none;
+}
+
+.prtBtn1 {
+    top: 290px;
+    left: 35px;
+}
+
+.prtBtn2 {
+    top: 290px;
+    left: 115px;
+}
+
+.prtBtn3 {
+    top: 290px;
+    left: 195px;
+}
+
+.prtBtn4 {
+    top: 290px;
+    left: 275px;
+}
+
+.prtBtn5 {
+    top: 370px;
+    left: 35px;
+}
+
+.prtBtn6 {
+    top: 370px;
+    left: 115px;
+}
+
+.prtBtn7 {
+    top: 370px;
+    left: 195px;
+}
+
+.prtBtn8 {
+    top: 370px;
+    left: 275px;
+}
+
+.prtBtn9 {
+    top: 450px;
+    left: 35px;
+}
+
+.prtBtn10 {
+    top: 450px;
+    left: 115px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+}
+
+.homeScreen {
+    width: 375px;
+    height: 812px;
+    top: -3118px;
+    left: -4070px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: lato;
+    background-color: #121212;
 }
