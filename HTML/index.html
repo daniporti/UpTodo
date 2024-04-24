@@ -97,7 +97,7 @@
                 <div class="battery"></div>
             </div>
         </header>
-        <div class="indexWrapperBlr nt">
+        <div class="indexWrapper nt">
             <div class="index">
                 <div class="sort">
                     <div class="sortIcon"></div>
@@ -142,7 +142,7 @@
                 <div class="battery"></div>
             </div>
         </header>
-        <div class="indexWrapperBlr">
+        <div class="indexWrapper">
             <div class="index">
                 <div class="sort">
                     <div class="sortIcon"></div>
@@ -170,8 +170,8 @@
                     <button class="prtBtn prtBtn10" onclick="toggleButton(10)"><img src="../Components/flag.png" alt=""><p>10</p></button>
                 </div>                
                 <div class="final">
-                    <button class="cancel">Cancel</button>
-                    <button class="save" onclick="savePriority()">Save</button>
+                    <button class="cancel"><p>Cancel</p></button>
+                    <button class="save" onclick="savePriority()"><p>Save</p></button>
                 </div>
             </div>
         </div>
@@ -193,7 +193,7 @@
                 <div class="battery"></div>
             </div>
         </header>
-        <div class="indexWrapperBlr">
+        <div class="indexWrapper">
             <div class="index">
                 <div class="sort">
                     <div class="sortIcon"></div>
@@ -210,6 +210,7 @@
                     <img src="../Components/Frame 159.png" alt="">
                 </div>
                 <div class="unfinTask">
+                    
                 </div>
             </div>
             <div class="finished">
@@ -219,6 +220,107 @@
                 <div class="finiTask">
                 </div>
             </div>
+        </div>
+        <div class="menuNav">
+            <div class="rectangle">
+                <div class="indexWrap">
+                    <div class="left">
+                        <div class="indexBtn">
+                            <img src="../Components/home-2.png" alt="">
+                            <p>Index</p>
+                        </div>
+                        <div class="calendarBtn">
+                            <img src="../Components/calendar.png" alt="">
+                            <p>Calendar</p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <button class="newTaskBtn"><img src="../Components/add.png" alt=""></button>
+                    </div>
+                    <div class="rigth">
+                        <div class="focuseBtn">
+                            <img src="../Components/clock.png" alt="">
+                            <p>Focuse</p>
+                        </div>
+                        <div class="profileBtn">
+                            <img src="../Components/user.png" alt="">
+                            <p>Profile</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <img src="../Components/Rectangle 90.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category" style="display: none;">
+        <header class="statusBar">
+            <div class="leftSide">
+                <div class="clock">
+                    <p>9:41</p>
+                </div>
+            </div>
+            <div class="notch">
+                <div class="iphoneX"></div>
+            </div>
+            <div class="rigthSide">
+                <div class="signal"></div>
+                <div class="wifi"></div>
+                <div class="battery"></div>
+            </div>
+        </header>
+        <div class="indexWrapper">
+            <div class="index">
+                <div class="sort">
+                    <div class="sortIcon"></div>
+                </div>
+                <p class="indexT">Index</p>
+                <div class="profile"></div>
+            </div>
+        </div>
+        <div class="selectCategory">
+            <div class="title">
+                <h2>Choose Category</h2>
+            </div>
+            <div class="allCategory" id="allCategory">
+                <div class="categoryBtn">
+                    <button class="newCategory"><img src="../Components/add 1.png" alt=""></button>
+                    <p>Create new</p>
+                </div>
+            </div>
+            <div class="addBtn">
+                <button class="AddCategoryBtn"><p>Add Category</p></button>
+            </div>
+        </div>
+        <div class="addCategory" style="display: none;">
+            <div class="titleCtg">
+               <h2>Create new Category</h2> 
+            </div>
+            <div class="nameCtg">
+                <p>category name :</p>
+                <input type="text" placeholder="Category name" id="categoryName">
+            </div>
+            <div class="iconCtg">
+                <p>category icon :</p>
+                <button class="searchIcon" onclick="selectImage()"><div class="iconPreview"></div></button>
+            </div>
+            
+            <div class="color">
+                <p>category color :</p>
+                <button class="button" style="background-color: #C9CC41;" onclick="selectColor('#C9CC41')"></button> 
+                <button class="button" style="background-color: #66CC41;" onclick="selectColor('#66CC41')"></button> 
+                <button class="button" style="background-color: #41CCA7;" onclick="selectColor('#41CCA7')"></button>
+                <button class="button" style="background-color: #4181CC;" onclick="selectColor('#4181CC')"></button>
+                <button class="button" style="background-color: #41A2CC;" onclick="selectColor('#41A2CC')"></button> 
+                <button class="button" style="background-color: #CC8441;" onclick="selectColor('#CC8441')"></button> 
+                <button class="button" style="background-color: #9741CC;" onclick="selectColor('#9741CC')"></button> 
+                <button class="button" style="background-color: #CC4173;" onclick="selectColor('#CC4173')"></button>
+            </div>
+            
+            <button class="cancelCtg" id="cancelCtg"><p>cancel</p></button>
+            <button class="saveCtg" id="saveCtg"><p>save</p></button>
         </div>
     </div>
 </body>

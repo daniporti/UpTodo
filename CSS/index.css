@@ -12,7 +12,7 @@ body {
     justify-content: center;
 }
 
-.emptyScreen , .newTask{
+.emptyScreen , .newTask, .category{
     width: 375px;
     height: 812px;
     top: -3118px;
@@ -333,6 +333,7 @@ h2 {
     opacity: 0px;
     position: absolute;
     bottom: 0;
+    display: flex;
 }
 
 .menuNav .rectangle {
@@ -344,6 +345,8 @@ h2 {
     background: #363636;
     position: relative;
     bottom: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .menuNav .indexWrap {
@@ -371,6 +374,7 @@ h2 {
     left: 20px;
     gap: 0px;
     opacity: 0px;
+    position: absolute;
 }
 
 .menuNav .indexBtn img {
@@ -395,6 +399,16 @@ h2 {
     line-height: 18.06px;
     text-align: left;
     color: #FFFFFFDE;
+}
+
+.menuNav .calendarBtn {
+    width: 48px;
+    height: 50px;
+    top: 36px;
+    left: 88px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
 }
 
 .menuNav .calendarBtn img{
@@ -427,6 +441,7 @@ h2 {
     justify-content: center;
     top: -8px;
     left: 156px;
+    position: absolute;
 }
 
 
@@ -437,9 +452,12 @@ h2 {
     border-radius: 50%;
     width: 64px;
     height: 64px;
+    top: -8px;
+    left: 156px;
     gap: 0px;
     opacity: 0px;
     background: #8687E7;
+    padding: 5px;
 }
 
 .menuNav .rigth {
@@ -454,6 +472,9 @@ h2 {
     left: 240px;
     gap: 0px;
     opacity: 0px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
 }
 
 .focuseBtn img {
@@ -489,6 +510,7 @@ h2 {
     opacity: 0px;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 .profileBtn img {
@@ -498,6 +520,7 @@ h2 {
     left: 320px;
     gap: 0px;
     opacity: 0px;
+    display: flex;
 }
 
 .profileBtn p {
@@ -536,8 +559,8 @@ h2 {
 .content .bg h2 {
     width: 81px;
     height: 30px;
-    top: 287px;
-    left: 25px;
+    top: 17px;
+    left: 17px;
     gap: 0px;
     opacity: 0px;
     font-family: Lato;
@@ -546,7 +569,12 @@ h2 {
     line-height: 30.1px;
     text-align: left;
     color: #FFFFFFDE;
-    display: inline;
+    display: flex;
+    position: relative;
+}
+
+.content form {
+    margin-top: 20px;
 }
 
 .content input {
@@ -614,6 +642,9 @@ h2 {
 .content .configuration {
     display: flex;
     align-items: flex-end;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 5px;
 }
 
 .content .configuration .timer{
@@ -663,10 +694,10 @@ h2 {
     background-image: url("../Components/send.png");
     width: 24px;
     height: 24px;
-    top: 449px;
-    left: 327px;
+    left: 240px;
     gap: 0px;
     opacity: 0px;
+    position: relative;
 }
 
 .priority {
@@ -688,9 +719,11 @@ h2 {
     top: 228px;
     left: 24px;
     gap: 0px;
-    border-radius: 4px 0px 0px 0px;
+    border-radius: 4px;
+    border: 1px 0px 0px 0px;
     opacity: 0px;
     background: #363636;
+    position: absolute;
 }
 
 .priority .bg .divider {
@@ -702,6 +735,37 @@ h2 {
     border: 1px 0px 0px 0px;
     opacity: 0px;
     border: 1px solid #979797
+}
+
+.priority .bg .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.priority .bg .title h2{
+    width: 85px;
+    height: 20px;
+    top: 238px;
+    left: 145px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #FFFFFFDE;
+}
+
+.priority .divider {
+    background-image: url("../Components/Divider.png");
+}
+
+.priority .priorityNumber {
+    display: flex;
+    position: fixed;
 }
 
 .priority .priorityNumber .prtBtn {
@@ -716,7 +780,7 @@ h2 {
     background: #272727;
     box-shadow: none;
     border: none;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
 }
 
@@ -819,6 +883,76 @@ h2 {
     padding-top: 45px;
 }
 
+.bottom img {
+    width: 134px;
+    height: 5px;
+    top: 15px;
+    left: -70px;
+    opacity: 0px;
+    position: relative;
+}
+
+.priority .final {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.priority .bg .final .cancel {
+    width: Fixed 143px;
+    height: Hug 48px;
+    top: 532px;
+    left: 32px;
+    padding: 12px 24px 12px 24px;
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    position: absolute;
+}
+
+.bg .final .cancel p {
+    width: 48px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.08px;
+    text-align: left;
+    color: #8687E7;
+}
+
+.bg .final .save {
+    width: Fixed 153px;
+    height: Hug 48px;
+    top: 532px;
+    left: 190px;
+    padding: 12px 24px 12px 24px;
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: #8687E7;
+    border: none;
+    position: absolute;
+}
+
+.bg .final .save p {
+    width: 33px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.08px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
 .homeScreen {
     width: 375px;
     height: 812px;
@@ -830,4 +964,512 @@ h2 {
     flex-direction: column;
     font-family: lato;
     background-color: #121212;
+}
+
+.unfinTask {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.unfinTask .task {
+    width: 327px;
+    height: 72px;
+    top: 229px;
+    left: 24px;
+    gap: 0px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: #363636;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.finished {
+    margin-left: 20px;
+    margin-top: 30px;
+    left: 20px;
+}
+
+.finiTask .task {
+    width: 327px;
+    height: 72px;
+    top: -220px;
+    left: -30px;
+    gap: 0px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: #363636;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.tasks .unfinished {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    width: 327px;
+    height: 72px;
+    top: 229px;
+    left: 24px;
+}
+
+.finished {
+    margin-top: 20px;
+    width: 327px;
+    height: 72px;
+    top: 544px;
+    left: 24px;
+    position: relative;
+    width: Hug (102px)px;
+    height: Hug (31px)px;
+    top: 497px;
+    left: 24px;
+    padding: 5px 10px 5px 10px;
+    gap: 10px;
+    border-radius: 6px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.unfinTask, .finiTask {
+    padding-top: 10px;
+}
+
+.task .checkBox {
+    width: 16px;
+    height: 16px;
+    top: 257px;
+    left: 34px;
+}
+
+.task .name {
+    width: 139px;
+    height: 48px;
+    top: 241px;
+    left: 62px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.task .name p {
+    width: 139px;
+    height: 21px;
+    top: 241px;
+    left: 62px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.3199999928474426px;
+    text-align: left;
+    color: #FFFFFFDE;
+}
+
+.task .name .date {
+    width: 89px;
+    height: 21px;
+    top: 268px;
+    left: 62px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.3199999928474426px;
+    text-align: left;
+    color: #AFAFAF;
+}
+
+.category .selectCategory {
+    width: 327px;
+    height: 556px;
+    top: 128px;
+    left: 24px;
+    gap: 0px;
+    border-radius: 4px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #363636;
+    position: absolute;
+}
+
+.selectCategory .allCategory {
+    display: flex;
+    margin: 5px;
+}
+
+.selectCategory .allCategory .categoryBtn {
+    width: 74px;
+    height: 90px;
+    top: 505px;
+    left: 151px;
+    gap: 0px;
+    border-radius: 4px;
+    opacity: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.category .selectCategory .allCategory button {
+    width: 64px;
+    height: 64px;
+    top: 505px;
+    left: 156px;
+    gap: 0px;
+    border-radius: 4px;
+    opacity: 0px;
+    border: 0;
+}
+
+.task .taskCategory {
+    width: Hug (87px)px;
+    height: Hug (29px)px;
+    top: 268px;
+    left: 200px;
+    padding: 4px 8px 4px 8px;
+    gap: 5px;
+    border-radius: 4px;
+    opacity: 0px;
+    display: flex;
+    align-content: flex-end;
+    align-items: baseline;
+}
+
+.task .taskCategory img {
+    width: 12.25px;
+    height: 9.29px;
+    top: 2.67px;
+    left: 0.59px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.task .taskPriority {
+    width: Hug (42px)px;
+    height: Hug (29px)px;
+    top: 268px;
+    left: 299px;
+    padding: 4px 8px 4px 8px;
+    gap: 5px;
+    border-radius: 4px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.searchBar {
+    width: Fixed (327px)px;
+    height: Hug (48px)px;
+    top: 114px;
+    left: 24px;
+    padding: 12px 0px 0px 0px;
+    gap: 12px;
+    border-radius: 4px;
+    border: 0.8px 0px 0px 0px;
+    opacity: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unfinished .filter {
+    width: Hug (76px)px;
+    height: Hug (31px)px;
+    top: 182px;
+    left: 24px;
+    padding: 5px 10px 5px 10px;
+    gap: 10px;
+    border-radius: 6px;
+    opacity: 0px;
+    position: absolute;
+}
+
+.finished .filter {
+    top: -250px;
+    left: -5px;
+    padding: 5px 10px 5px 10px;
+    gap: 10px;
+    border-radius: 6px;
+    opacity: 0px;
+    position: absolute;
+}
+
+.category .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category .title h2 {
+    width: 123px;
+    height: 24px;
+    top: 138px;
+    left: 127px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24.08px;
+    text-align: left;
+    color: #FFFFFFDE;
+}
+
+.category .newCategory {
+    background: #80FFD1;
+}
+
+.category .allCategory p {
+    width: 74px;
+    height: 21px;
+    top: 574px;
+    left: 151px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21.07px;
+    text-align: center;
+    color: #FFFFFFDE;
+}
+
+.category .AddCategoryBtn {
+    width: 300px;
+    height: 48px;
+    top: 379px;
+    left: 13px;
+    padding: 12px 24px 12px 24px;
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: #8687E7;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.category .AddCategoryBtn p {
+    width: 97px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.08px;
+    text-align: left;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.category .addBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.addCategory {
+    text-align: left;
+}
+
+.addCategory .titleCtg {
+    height: 20px;
+    top: 70px;
+    left: 24px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.addCategory h2 {
+    height: 20px;
+    top: 70px;
+    left: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #FFFFFFDE;
+}
+
+.addCategory .nameCtg {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.addCategory .nameCtg p {
+    width: 107px;
+    height: 20px;
+    top: 110px;
+    left: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #FFFFFFDE;
+
+}
+
+.addCategory .nameCtg input {
+    width: Fixed (327px)px;
+    height: Hug (48px)px;
+    top: 146px;
+    left: 24px;
+    padding: 12px 0px 0px 0px;
+    gap: 12px;
+    border-radius: 4px;
+    border: 0.8px 0px 0px 0px;
+    opacity: 0px;
+    background: #1D1D1D;
+    border: 0;
+    margin-top: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.addCategory .iconCtg {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.addCategory .iconCtg p {
+    width: 98px;
+    height: 20px;
+    top: 214px;
+    left: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #FFFFFFDE;
+    margin-top: 5px;
+}
+
+.addCategory .iconCtg button {
+    width: Hug (154px)px;
+    height: Hug (37px)px;
+    top: 250px;
+    left: 24px;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    border-radius: 6px;
+    opacity: 0px;
+    background: #FFFFFF36;
+    border: 0;
+
+}
+
+.addCategory .color {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.addCategory .color p {
+    width: 104px;
+    height: 20px;
+    top: 307px;
+    left: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #FFFFFFDE;
+    margin-top: 5px;
+}
+
+.addCategory .color button {
+    width: 36px;
+    height: 36px;
+    top: 343px;
+    left: 24px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.addCategory .cancelCtg {
+    width: 154px;
+    height: 48px;
+    top: 704px;
+    left: 24px;
+    padding: 12px 24px 12px 24px;
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: transparent;
+    border: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.addCategory .cancelCtg p {
+    width: 48px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.08px;
+    text-align: left;
+    color: #8687E7;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.addCategory .saveCtg {
+    width: 153px;
+    height: 48px;
+    top: 704px;
+    left: 198px;
+    padding: 12px 24px 12px 24px;
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+    background-color: #8687E7;
+    border: 0;
+}
+
+.addCategory .saveCtg p {
+    width: 117px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.08px;
+    text-align: left;
+    color: #FFFFFF;
 }
